@@ -1,0 +1,5 @@
+exam1 25
+exam2 35
+asg1 10
+asg2 15
+asg3 15

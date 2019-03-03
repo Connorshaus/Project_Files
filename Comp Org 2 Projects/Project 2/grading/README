@@ -1,0 +1,22 @@
+Test Groups 
+
+Group 1:
+-- Pipeline without data or control hazards 
+
+Group 2:
+-- Data hazards solvable by forwarding
+ * lw -> sw, alu -> sw
+ * alu -> alu, lw -> alu
+ * hazards on $0
+ * redundant hazards, 
+ * two consecutive hazards
+
+Group 3: 
+-- Data hazards requiring stalls
+
+Group 4: 
+-- Control hazards forward and backword
+
+Notes:
+-- Address false negatives (missed forwards/stalls)
+-- Address false positives (incorrect forwards/stalls)

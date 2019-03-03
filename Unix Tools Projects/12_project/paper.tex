@@ -1,0 +1,82 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{The Five Most Interesting Things I Learned in UNIX Tools}
+\author{Connor Hausmann }
+\date{December 6, 2018}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+
+\begin{document}
+\maketitle
+
+\section{The Grep Command}
+The grep command was great for using regex to search strings in a file. Using grep allowed me to further my understanding of regular expressions and it gave me a very user-friendly way to specify how we managed that patter matching with command line operations. Some of those command line operations can be found in the table below:
+\citep{Geek}
+
+\begin{table}[h]
+\caption{Sample Commands}
+\begin{center}
+\begin{tabular}{|c||c|}
+\hline
+\textbf{Command} & \textbf{Description}\\
+\hline
+-c & Prints the number of lines\\
+\hline
+-h & Displays the matched lines, not filenames\\
+\hline
+-l & Displays list of filenames\\
+\hline
+-e & Specifies an expression\\
+\hline
+-w & positive\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\section{The Man Pages}
+Though they were not explicitly taught in this class, I had not used them properly until taking this class. The MAN pages as well as the MAN command have opened my eyes to a powerful resource that has been available to me since beginning programming. It is often faster to search the man pages for knowledge on a command rather than having to look for it online. As we all know, unix is a powerful programming language to learn because commands are easier and faster to type than using a mouse at times. Below is a screenshot of me accessing the ‘man’ pages for the command ‘-ls’ and below 
+that is a screenshot of the man pages redirection. 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.5]{Untitled.png}
+\caption{LS Commands}
+\label{fig:Man Pages}
+\end{figure}
+
+\section{Latex Implementation}
+Possessing the ability to create and export a PDF file based on an input file is something else we learned and it is referred to as using Latex. This is helpful because this document preparation and markup system allows us to produce PDF files that contain tables, pictures and many other features. This assignment is a very good representation for how latex files work. As this PDF was created using bibtex, latex, import and xfig. 
+
+\section{Perl in General}
+Perl programming was completely new to me prior to taking this course and there are many aspects of the language that I like, including the use of hashes and keys. Having a scalable data type that has no particular order made manipulating the hash values via the use of keys a low easier. This was my first real use of a simple database. Below is a list of other Perl commands/functions that I had never used before but found helpful.\citep{theTextBook}
+
+\begin{itemize}
+    \item Scalar Variables using ‘my’
+    \item The `print` expression as opposed to `printf`
+    \item Reading in a file to a line using <STDIN>
+    \item The Chomp operator to remove the newlines
+    \item Shift/Unshift
+    \item Foreach
+\end{itemize}
+
+
+\section{The Sed Command}
+Heading back to the beginning of the semester, I found myself using Sed to complete many of my assignments. Sed is great for making changes to more than one file according to editing commands. This stream editor then writes the results to standard output for the user to easily access. \citep{GNUwebsite}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[scale=.8]{Screenshot_1.png}
+\caption{Sed Example}
+\label{fig:Sed Example}
+\end{figure} 
+
+\section{Conclusion}
+To conclude this semester of UNIX tools at Florida State University, I can say that I learned two new languages in one class as well as tools and applications on how to use them. This class will help me further my abilities in Computer Science and will ultimately help me become a better code writer. Because, after all, sometimes it is faster to do a few key strokes rather than using a mouse.
+
+\bibliographystyle{plain}
+\bibliography{refs}
+
+\end{document}
